@@ -84,8 +84,8 @@ function moverlobo(evento)
             {
                 
                 ylobo=ylobo+movimiento;
-                dibujar();
                 eliminar_animal();
+                dibujar();
                 
             }
         break;
@@ -94,8 +94,8 @@ function moverlobo(evento)
             if(lobo.cargaOK && ylobo>=0)
             {
                   ylobo=ylobo-movimiento;
-                dibujar();
                 eliminar_animal();
+                dibujar();
                
             }
         break;
@@ -105,20 +105,20 @@ function moverlobo(evento)
             {
                 
                 xlobo=xlobo-movimiento;
-                dibujar();
                 eliminar_animal();
+                dibujar();
                 
             }
         break;
 
         case teclas.RIGHT:
 
-            if(lobo.cargaOK && xlobo<papel.canvas.width-80)
+            if(lobo.cargaOK && xlobo<=papel.canvas.width-80)
             {
         
                 xlobo=xlobo+movimiento;
+                eliminar_animal();
                  dibujar();
-                 eliminar_animal();
                  
             }
         break;
