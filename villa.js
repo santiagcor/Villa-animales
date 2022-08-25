@@ -86,6 +86,7 @@ function moverlobo(evento)
                 ylobo=ylobo+movimiento;
                 dibujar();
                 eliminar_animal();
+                
             }
         break;
         
@@ -95,6 +96,7 @@ function moverlobo(evento)
                   ylobo=ylobo-movimiento;
                 dibujar();
                 eliminar_animal();
+               
             }
         break;
 
@@ -105,6 +107,7 @@ function moverlobo(evento)
                 xlobo=xlobo-movimiento;
                 dibujar();
                 eliminar_animal();
+                
             }
         break;
 
@@ -116,9 +119,11 @@ function moverlobo(evento)
                 xlobo=xlobo+movimiento;
                  dibujar();
                  eliminar_animal();
+                 
             }
         break;
     }
+    mostrarmensaje();
 }
 
 function eliminar_animal()
@@ -177,7 +182,12 @@ function eliminar_animal()
     }
 }
 
-    
+function mostrarmensaje(){
+    if(xcerdo==0 && ycerdo==0 && xpollo==0 && ypollo==0 && xvaca==0 && yvaca==0){
+        window.alert("Has matado a los animales; ganaste!");
+    }
+}
+
  function dibujar()
 {   
     var x;
